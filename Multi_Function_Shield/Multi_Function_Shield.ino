@@ -26,12 +26,5 @@ void setup()
 
 void loop()
 {
-    if(digitalRead(A1) == HIGH)
-    {
-      digitalWrite(LED_D1, HIGH);
-    }
-    else
-    {
-      digitalWrite(LED_D1, LOW);
-    }
+  digitalWrite(LED_D1, digitalRead(A1));
 }
