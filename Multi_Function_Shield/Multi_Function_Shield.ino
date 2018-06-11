@@ -20,14 +20,12 @@ void setup()
   digitalWrite(LED_D2, HIGH);
   digitalWrite(LED_D3, HIGH);
   digitalWrite(LED_D4, HIGH);
+
+  Serial.println("App Init OK");
 }
 
 void loop()
 {
-  Serial.println("App Init OK");
-
-  while(1)
-  {
     if(digitalRead(A1) == HIGH)
     {
       digitalWrite(LED_D1, HIGH);
@@ -36,5 +34,4 @@ void loop()
     {
       digitalWrite(LED_D1, LOW);
     }
-  }
 }
