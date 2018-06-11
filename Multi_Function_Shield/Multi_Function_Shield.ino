@@ -30,7 +30,7 @@ void loop()
     {
       digitalWrite(LED_D1, HIGH);
     }
-    else if(digitalRead(A1) == LOW)
+    else
     {
       digitalWrite(LED_D1, LOW);
     }
